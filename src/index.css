@@ -4,6 +4,8 @@
   color: white;
 
   /* Colors */
+  --bg: #0d012c;
+
   --orange-600: #ea580c;
   --orange-700: #c2410c;
 
@@ -14,8 +16,7 @@
 
 /* Reset */
 body {
-  background: black;
-
+  background: var(--bg);
   margin: 0;
 }
 
