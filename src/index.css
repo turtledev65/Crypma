@@ -90,6 +90,7 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
+  padding-block: 0.7em;
 }
 
 .nav--filled {
@@ -113,4 +114,5 @@ ul {
   background: #2ed252;
   border-radius: 50%;
   font-weight: bold;
+  margin-right: 0.2rem;
 }
