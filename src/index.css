@@ -1,16 +1,28 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
+  color: white;
 
   /* Colors */
   --orange-600: #ea580c;
   --orange-700: #c2410c;
 
+  --blue-900: #171b37;
+  --green-900: #17232d;
+  --purple-900: #211137;
 }
 
 /* Reset */
 body {
+  background: black;
+
   margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 button {
@@ -20,6 +32,8 @@ button {
 }
 
 /* Component Styles */
+
+/* Button */
 .btn {
   font-weight: bold;
   padding: 0.5em 1em;
@@ -33,4 +47,24 @@ button {
 
 .btn--accent:hover {
   background: var(--orange-700);
+}
+
+/* Card */
+.card {
+  display: inline-block;
+  border-radius: inherit;
+  padding: 1.2em 1em;
+  border-radius: 14px;
+}
+
+.card--blue {
+  background: var(--blue-900);
+}
+
+.card--green {
+  background: var(--green-900);
+}
+
+.card--purple {
+  background: var(--purple-900);
 }
