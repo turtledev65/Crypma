@@ -1,10 +1,10 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
-  color: white;
 
   /* Colors */
   --bg: #0d012c;
+  --fg: #b3afba;
 
   --orange-600: #ea580c;
   --orange-700: #c2410c;
@@ -17,6 +17,7 @@
 /* Reset */
 body {
   background: var(--bg);
+  color: var(--fg);
   margin: 0;
 }
 
@@ -24,6 +25,20 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
 }
 
 button {
@@ -109,6 +124,7 @@ ul {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: white;
   width: 1.5rem;
   height: 1.5rem;
   background: #2ed252;
@@ -152,4 +168,3 @@ ul {
   margin-block-start: 0;
   font-weight: bold;
 }
-
