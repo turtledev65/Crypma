@@ -101,11 +101,13 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  padding-block: 0.7em;
 
-  position: sticky;
   top: 0;
   width: 100%;
-  padding-block: 0.7em;
+  z-index: 10;
+
 }
 
 .nav--filled {
