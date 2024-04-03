@@ -108,6 +108,7 @@ ul {
   width: 100%;
   z-index: 10;
 
+  transition: background 0.2s;
 }
 
 .nav--filled {
