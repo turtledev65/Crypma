@@ -1,10 +1,10 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 
   /* Colors */
-  --bg: #0d012c;
-  --fg: #b3afba;
+  --gray-300: #ddd8e6;
+  --gray-500: #b3afba;
 
   --orange-600: #ea580c;
   --orange-700: #c2410c;
@@ -12,6 +12,10 @@
   --blue-900: #171b37;
   --green-900: #17232d;
   --purple-900: #211137;
+
+  --bg: #0d012c;
+  --fg: var(--gray-500);
+
 }
 
 /* Reset */
@@ -75,6 +79,49 @@ ul {
 .btn--accent:hover {
   background: var(--orange-700);
 }
+
+/* Input */
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.4em 0.5em;
+  border: 1px var(--gray-500) solid;
+  border-radius: 40px;
+  outline: none;
+}
+
+.input-group>input {
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+.input-group>button[type="submit"] {
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  background: var(--orange-600);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+
+  display: grid;
+  place-items: center;
+}
+
+.input-group>button[type="submit"]:hover {
+  background: var(--orange-700);
+}
+
+.input-group:focus {
+  border-color: var(--gray-300);
+}
+
 
 /* Card */
 .card {
@@ -170,4 +217,41 @@ ul {
 .hero h1 {
   margin-block-start: 0;
   font-weight: bold;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.footer__section {
+  flex: 1;
+}
+
+.footer__section:first-of-type {
+  flex: 1.5;
+}
+
+.footer__section__title {
+  color: white;
+  font-weight: bold;
+}
+
+.footer__section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+/* Utilities */
+.mt-1 {
+  margin-top: 1rem;
 }
