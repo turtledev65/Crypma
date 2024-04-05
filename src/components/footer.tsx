@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="footer__section">
           <p className="footer__section__title">Exchange</p>
           <ul>
-            <li><a href="#">Buy crypto</a></li>
-            <li><a href="#">Market</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Cryptocurrency">Learn crypto</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a className="link" href="#">Buy crypto</a></li>
+            <li><a className="link" href="#">Market</a></li>
+            <li><a target="_blank" className="link" href="https://en.wikipedia.org/wiki/Cryptocurrency">Learn crypto</a></li>
+            <li><a className="link" href="#">Contact</a></li>
           </ul >
         </div >
         <div className="footer__section">
