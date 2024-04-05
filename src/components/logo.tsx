@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
-    <a href="#">
-      <span className="logo">C</span>rypma
+    <a href="#" className="logo-container">
+      <span className="logo__span">C</span>rypma
     </a>
   )
 }

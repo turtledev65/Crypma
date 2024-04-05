@@ -170,16 +170,19 @@ ul {
 }
 
 /* Logo */
-.logo {
+.logo-container {
+  color: white;
+  font-weight: bold;
+}
+
+.logo__span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: white;
   width: 1.5rem;
   height: 1.5rem;
   background: #2ed252;
   border-radius: 50%;
-  font-weight: bold;
   margin-right: 0.2rem;
 }
 
