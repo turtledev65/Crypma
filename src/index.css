@@ -16,6 +16,7 @@
   --bg: #0d012c;
   --fg: var(--gray-500);
 
+  --bg-alt: #120b21;
 }
 
 /* Reset */
@@ -269,6 +270,10 @@ ul {
   padding: 4rem 8rem;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.block--dark {
+  background: var(--bg-alt);
 }
 
 .img-bg {
