@@ -1,10 +1,46 @@
 import Button from "./components/button"
+import Card from "./components/card"
+import Hero from "./components/hero"
+import Logo from "./components/logo"
+import Navbar from "./components/nav"
+import heroBg from "./assets/cryptocurrencies.jpg"
+import Footer from "./components/footer"
+import Callout from "./components/callout"
+import piggyBank from "./assets/piggybank.jpg"
 
 function App() {
   return (
     <>
-      <p>Hello World</p>
-      <Button onClick={() => console.log("Hello World")}>Click Me</Button>
+      <Navbar>
+        <Logo />
+        <ul>
+          <li><a className="link" href="#prices">Prices</a></li>
+          <li><a className="link" href="#learn">Learn</a></li>
+          <li><a className="link" href="#wallet">Wallet</a></li>
+          <li><a className="link" href="#buy-and-sell">Buy & Sell</a></li>
+          <li><a className="link" href="#about">About</a></li>
+          <li><a className="link" href="#faq">FAQ</a></li>
+        </ul>
+        <a href="/signup">sign up</a>
+      </Navbar>
+      <Hero backgroundImg={heroBg}>
+        <p className="tagline">Crypto for future</p>
+        <h1 className="title">Buy, Sell and Trade Crypto</h1>
+        <p>Buy $500 worth of crypto and get a bonus of $50! Build a diversified portofolio with Bitcoin, Ethereum, and other popular coins</p>
+        <div className="mt-2">
+          <Button>Get Started</Button>
+        </div>
+      </Hero>
+      <div className="p-5">
+        <Callout backgroundImg={piggyBank}>
+          <span className="title title--xl">Secure an Easy Way to Trade Online</span>
+          <p>Sign up today to receive your free digital wallet. You can immediately start buying or selling Bitcoin, hassle-free.</p>
+          <div className="mt-2">
+            <Button>Get Started</Button>
+          </div>
+        </Callout>
+      </div>
+      <Footer />
     </>
   )
 }
