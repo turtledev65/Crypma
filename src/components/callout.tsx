@@ -8,7 +8,7 @@ const Callout = (props: { backgroundImg?: string }) => {
           <div className="overlay overlay--purple" />
         </>
       }
-      <h1>Secure an Easy Way to Trade Online</h1>
+      <span className="title title--xl">Secure an Easy Way to Trade Online</span>
       <p>Sign up today to receive your free digital wallet. You can immediately start buying or selling Bitcoin, hassle-free.</p>
       <div className="mt-2">
         <Button>Get Started</Button>

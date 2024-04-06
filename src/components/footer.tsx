@@ -9,7 +9,7 @@ const Footer = () => {
           <Logo />
         </div>
         <div className="footer__section">
-          <p className="footer__section__title">Exchange</p>
+          <p className="title">Exchange</p>
           <ul>
             <li><a className="link" href="#">Buy crypto</a></li>
             <li><a className="link" href="#">Market</a></li>
@@ -18,7 +18,7 @@ const Footer = () => {
           </ul >
         </div >
         <div className="footer__section">
-          <p className="footer__section__title">Contact</p>
+          <p className="title">Contact</p>
           43252 Borer Mountains
           <br />
           Zackerychester
@@ -29,7 +29,7 @@ const Footer = () => {
           732-528-4945
         </div >
         <div className="footer__section">
-          <p className="footer__section__title">Newsletter</p>
+          <p className="title">Newsletter</p>
           Subscribe our newsletter to get tips and more information about Crypma
           <EmailInput className="mt-1" onSubmit={(email) => console.log(`${email} subscribed to newsletter`)} />
         </div >

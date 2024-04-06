@@ -130,6 +130,16 @@ ul {
   color: var(--gray-300);
 }
 
+/* Title */
+.title {
+  color: white;
+  font-weight: bold;
+}
+
+.title--xl {
+  font-size: 4rem;
+}
+
 /* Card */
 .card {
   display: inline-block;
@@ -205,11 +215,6 @@ ul {
   padding: 10rem 5rem;
 }
 
-.hero h1 {
-  margin-block-start: 0;
-  font-weight: bold;
-}
-
 .container {
   max-width: 1000px;
   margin: auto;
@@ -229,11 +234,6 @@ ul {
 
 .footer__section:first-of-type {
   flex: 1.5;
-}
-
-.footer__section__title {
-  color: white;
-  font-weight: bold;
 }
 
 .footer__section ul {
