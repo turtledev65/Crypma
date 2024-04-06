@@ -3,7 +3,7 @@ import Logo from "./logo";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="container mb-3">
       <footer className="footer">
         <div className="footer__section">
           <Logo />
