@@ -261,6 +261,38 @@ ul {
   gap: 0.2em;
 }
 
+/* Callout */
+.callout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 8rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.callout__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.callout__bg-overlay {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: rgba(47, 11, 126, 0.9);
+  z-index: -1;
+}
+
 /* Utilities */
 
 .p-5 {
