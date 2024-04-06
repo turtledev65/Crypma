@@ -8,8 +8,8 @@ const Hero = ({ backgroundImg, children }: Props) => {
   return (
     <div className="hero" >
       {backgroundImg && <>
-        <img className="hero__bg" src={backgroundImg} />
-        <div className="hero__bg-overlay" />
+        <img className="img-bg" src={backgroundImg} />
+        <div className="overlay overlay--radial overlay--blue" />
       </>}
       {children}
     </div >

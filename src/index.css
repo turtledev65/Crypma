@@ -205,25 +205,6 @@ ul {
   padding: 10rem 5rem;
 }
 
-.hero__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.hero__bg-overlay {
-  content: "";
-  inset: 0;
-  position: absolute;
-  background: radial-gradient(rgba(34, 24, 67, 0.8), rgba(24, 19, 73, 1));
-  z-index: -1;
-}
-
 .hero h1 {
   margin-block-start: 0;
   font-weight: bold;
@@ -261,40 +242,7 @@ ul {
   gap: 0.2em;
 }
 
-/* Callout */
-.callout {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 4rem 8rem;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.callout__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.callout__bg-overlay {
-  content: "";
-  inset: 0;
-  position: absolute;
-  background: rgba(47, 11, 126, 0.9);
-  z-index: -1;
-}
-
 /* Utilities */
-
 .p-5 {
   padding: 5rem;
 }
@@ -309,4 +257,41 @@ ul {
 
 .mb-3 {
   margin-bottom: 3rem;
+}
+
+.block {
+  position: relative;
+  text-align: center;
+  padding: 4rem 8rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: rgba(var(--overlay-bg), 0.9);
+}
+
+.overlay--radial {
+  background: radial-gradient(rgba(var(--overlay-bg), 0.9), rgba(var(--overlay-bg), 1));
+}
+
+.overlay--blue {
+  --overlay-bg: 34, 24, 67;
+}
+
+.overlay--purple {
+  --overlay-bg: 47, 11, 126;
 }
