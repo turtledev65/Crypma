@@ -67,6 +67,34 @@ ul {
   padding: 0;
 }
 
+ol {
+  counter-reset: my-counter;
+  list-style: none;
+}
+
+ol li {
+  display: inline-block;
+}
+
+ol li::before {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-variant-numeric: tabular-nums;
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+}
+
+
 /* Component Styles */
 
 /* Button */
