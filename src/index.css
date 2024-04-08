@@ -77,6 +77,16 @@ ul {
   color: white;
 }
 
+.btn--outline {
+  border: 4px solid var(--orange-600);
+  color: var(--orange-600);
+}
+
+.btn--outline:hover {
+  background: var(--orange-600);
+  color: white;
+}
+
 .btn--accent {
   background: var(--orange-600);
 }
