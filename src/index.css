@@ -12,6 +12,7 @@
   --blue-900: #171b37;
   --green-500: #58bd7d;
   --green-900: #17232d;
+  --purple-500: #af60ed;
   --purple-900: #211137;
 
   --bg: #0d012c;
@@ -206,6 +207,13 @@ ol li::before {
   background: var(--green-500);
 }
 
+.badge--purple {
+  background: var(--purple-500);
+}
+
+.badge--blue {
+  background: var(--blue-500);
+}
 /* Card */
 .card {
   display: inline-block;
