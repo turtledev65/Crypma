@@ -16,6 +16,7 @@ function App() {
   const btcInfo = useCoinInfo("BTC");
   const ethInfo = useCoinInfo("ETH");
   const solInfo = useCoinInfo("SOL");
+
   return (
     <>
       <Navbar>
@@ -128,6 +129,36 @@ function App() {
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
           </div>
+        </div>
+        <div className="p-5">
+          <p className="tagline text-center">Portofolio</p>
+          <h2 className="title text-center">Create Portofolio</h2>
+          <ol className="grid grid-2x2 gap-1">
+            <Card variant="green">
+              <li>
+                <span className="title">Manage your portofolio</span>
+                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
+              </li>
+            </Card>
+            <Card variant="blue">
+              <li>
+                <span className="title">Manage your portofolio</span>
+                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
+              </li>
+            </Card>
+            <Card variant="purple">
+              <li>
+                <span className="title">Manage your portofolio</span>
+                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
+              </li>
+            </Card>
+            <Card variant="green">
+              <li>
+                <span className="title">Manage your portofolio</span>
+                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
+              </li>
+            </Card>
+          </ol>
         </div>
         <Callout backgroundImg={piggyBank}>
           <span className="title title--xl">Secure an Easy Way to Trade Online</span>
