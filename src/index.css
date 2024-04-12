@@ -439,6 +439,10 @@ section h2 {
   font-weight: bold;
 }
 
+.font-lg {
+  font-size: 2.5rem;
+}
+
 .color-white {
   color: white;
 }

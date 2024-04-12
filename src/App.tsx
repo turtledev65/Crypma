@@ -95,19 +95,19 @@ function App() {
           </div>
           <div className="grid grid-2x2 gap-1 text-center">
             <div>
-              <p className="font-bold color-white">25M+</p>
+              <p className="font-bold font-lg color-green m-0">25M+</p>
               <p>USERS WORLDWIDE</p>
             </div>
             <div>
-              <p className="font-bold color-white">140</p>
+              <p className="font-bold font-lg color-green m-0">140</p>
               <p>COUNTRIES SUPPORTED</p>
             </div>
             <div>
-              <p className="font-bold color-white">56M+</p>
+              <p className="font-bold font-lg color-green m-0">56M+</p>
               <p>CRYPTO TRANSACTIONS</p>
             </div>
             <div>
-              <p className="font-bold color-white">$180B</p>
+              <p className="font-bold font-lg color-green m-0">$180B</p>
               <p>ASSETS ON PLATFORM</p>
             </div>
           </div>
