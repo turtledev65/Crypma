@@ -433,3 +433,35 @@ ol li::before {
 .overlay--purple {
   --overlay-bg: 47, 11, 126;
 }
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+.grid-2x2 {
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--1>* {
+  flex: 1;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
