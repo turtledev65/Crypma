@@ -36,12 +36,12 @@ const Graph = ({ data, width = 150, height = 40, variant = "green" }: Props) => 
   return (
     <svg className="graph" width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
       <defs>
-        <linearGradient id="linear-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+        <linearGradient id={`linear-gradient-${variant}`} x1="0%" y1="100%" x2="0%" y2="0%">
           <stop offset="0%" style={{ stopColor: `var(--${variant}-500)` }} />
           <stop offset="100%" style={{ stopColor: "rgba(0, 0, 0, 0)" }} />
         </linearGradient>
       </defs>
-      <polyline points={points.join(" ")} stroke={`var(--${variant}-500)`} strokeWidth={3} fill="url(#linear-gradient)" />
+      <polyline points={points.join(" ")} stroke={`var(--${variant}-500)`} strokeWidth={3} fill={`url(#linear-gradient-${variant})`} />
     </svg >
   )
 }
