@@ -86,6 +86,31 @@ function App() {
           </ol>
           <Button outline>Connect Wallet</Button>
         </div>
+        <div className="p-5 flex flex--center flex--1">
+          <div>
+            <p className="tagline">About Us</p>
+            <h2 className="title">About Crypma</h2>
+            <p>We are building the cryptoeconomy - a more fair, accessible, efficient, and transparent financial system enabled by crypto</p>
+          </div>
+          <div className="grid grid-2x2 gap-1 text-center">
+            <div>
+              <p className="title">25M+</p>
+              <p>USERS WORLDWIDE</p>
+            </div>
+            <div>
+              <p className="title">140</p>
+              <p>COUNTRIES SUPPORTED</p>
+            </div>
+            <div>
+              <p className="title">56M+</p>
+              <p>CRYPTO TRANSACTIONS</p>
+            </div>
+            <div>
+              <p className="title">$180B</p>
+              <p>ASSETS ON PLATFORM</p>
+            </div>
+          </div>
+        </div>
         <Callout backgroundImg={piggyBank}>
           <span className="title title--xl">Secure an Easy Way to Trade Online</span>
           <p>Sign up today to receive your free digital wallet. You can immediately start buying or selling Bitcoin, hassle-free.</p>
