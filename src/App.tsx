@@ -111,6 +111,24 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="p-5">
+          <p className="tagline text-center">Our Speciality</p>
+          <h2 className="title text-center">WHY Choose Us</h2>
+          <div className="flex flex--center flex--1">
+            <Card variant="green">
+              <p className="title text-center">Security</p>
+              <p>Your funds are protected by industry-leading security protocols</p>
+            </Card>
+            <Card variant="purple">
+              <p className="title text-center">Protection</p>
+              <p>Your funds are protected by industry-leading security protocols</p>
+            </Card>
+            <Card variant="blue">
+              <p className="title text-center">Trust</p>
+              <p>Your funds are protected by industry-leading security protocols</p>
+            </Card>
+          </div>
+        </div>
         <Callout backgroundImg={piggyBank}>
           <span className="title title--xl">Secure an Easy Way to Trade Online</span>
           <p>Sign up today to receive your free digital wallet. You can immediately start buying or selling Bitcoin, hassle-free.</p>
