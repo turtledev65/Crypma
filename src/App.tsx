@@ -117,15 +117,15 @@ function App() {
           <h2>WHY Choose Us</h2>
           <div className="flex flex--center flex--1">
             <Card variant="green">
-              <p className="font-bold color-white text-center">Security</p>
+              <p className="font-bold color-white">Security</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
             <Card variant="purple">
-              <p className="font-bold color-white text-center">Protection</p>
+              <p className="font-bold color-white">Protection</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
             <Card variant="blue">
-              <p className="font-bold color-white text-center">Trust</p>
+              <p className="font-bold color-white">Trust</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
           </div>
