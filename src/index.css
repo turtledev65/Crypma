@@ -313,11 +313,6 @@ section h2 {
 }
 
 /* Logo */
-.logo-container {
-  color: white;
-  font-weight: bold;
-}
-
 .logo__span {
   display: inline-flex;
   justify-content: center;
