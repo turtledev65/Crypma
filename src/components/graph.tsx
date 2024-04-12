@@ -2,30 +2,46 @@ import { useMemo } from "react";
 
 type Props = {
   data: number[];
-  strokeWidth?: number;
-  spacing?: number;
+  width?: number;
+  height?: number;
   variant?: "green" | "blue" | "purple"
 }
 
-const Graph = ({ data, variant = "green", spacing = 30, strokeWidth = 4 }: Props) => {
-  const maxValue = useMemo(() => data.reduce((max, curr) => curr > max ? curr : max), [data])
+const Graph = ({ data, width = 150, height = 40, variant = "green" }: Props) => {
+  if (data.length === 0)
+    return
+
+  const spacing = width / data.length;
+
+  const maxValue = useMemo(() => Math.max(...data), [data])
+  const minValue = useMemo(() => Math.min(...data), [data])
+
+  const normalizedData = useMemo(() =>
+    data.map((val) => {
+      const diff = maxValue - minValue;
+      const scaledVal = (val - minValue) / diff;
+      return height - scaledVal * height;
+    }),
+    [data, maxValue, minValue]
+  );
   const points = useMemo(() =>
-    data.map((val, index) => {
+    normalizedData.map((val, index) => {
       const x = index * spacing;
-      const y = maxValue - val;
-      return `${x},${y}`
-    })
-    , [data])
+      return `${x},${val}`;
+    }),
+    [normalizedData]
+  );
+
 
   return (
-    <svg className="graph" viewBox={`-10 -10 ${points.length * spacing} ${maxValue + 10}`}>
+    <svg className="graph" width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
       <defs>
-        <linearGradient id="linear-gradient" x1="100%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id="linear-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
           <stop offset="0%" style={{ stopColor: `var(--${variant}-500)` }} />
           <stop offset="100%" style={{ stopColor: "rgba(0, 0, 0, 0)" }} />
         </linearGradient>
       </defs>
-      <polyline points={points.join(" ")} stroke={`var(--${variant}-500)`} strokeWidth={strokeWidth} fill="url(#linear-gradient)" />
+      <polyline points={points.join(" ")} stroke={`var(--${variant}-500)`} strokeWidth={3} fill="url(#linear-gradient)" />
     </svg >
   )
 }
