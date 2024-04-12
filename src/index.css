@@ -341,17 +341,16 @@ section h2 {
   padding: 10rem 5rem;
 }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
-
 /* Footer */
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
+
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 3rem;
 }
 
 .footer__section {
