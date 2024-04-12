@@ -29,20 +29,20 @@ function App() {
           <li><a className="link" href="#about">About</a></li>
           <li><a className="link" href="#faq">FAQ</a></li>
         </ul>
-        <a href="/signup">sign up</a>
+        <a href="/signup" className="font-bold color-green">sign up</a>
       </Navbar>
       <Hero backgroundImg={heroBg}>
         <p className="tagline">Crypto for future</p>
-        <h1 className="title">Buy, Sell and Trade Crypto</h1>
+        <h1 className="font-bold color-white">Buy, Sell and Trade Crypto</h1>
         <p>Buy $500 worth of crypto and get a bonus of $50! Build a diversified portofolio with Bitcoin, Ethereum, and other popular coins</p>
         <div className="mt-2">
           <Button>Get Started</Button>
         </div>
       </Hero>
       <div className="p-5">
-        <div className="block block--dark">
+        <section className="block block--dark">
           <p className="tagline">Wallet</p>
-          <h2 className="title">Connect Your Wallet</h2>
+          <h2>Connect Your Wallet</h2>
           <CurrencyCard
             name="Bitcoin"
             variant="green"
@@ -69,99 +69,99 @@ function App() {
             graphData={solInfo.graphData} />
           <ol className="grid grid-2x2 gap-1">
             <li>
-              <span className="title">Buy and Sel Crypto in Minutes</span>
+              <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
               <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
             </li>
             <li>
-              <span className="title">Buy and Sel Crypto in Minutes</span>
+              <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
               <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
             </li>
             <li>
-              <span className="title">Buy and Sel Crypto in Minutes</span>
+              <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
               <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
             </li>
             <li>
-              <span className="title">Buy and Sel Crypto in Minutes</span>
+              <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
               <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
             </li>
           </ol>
           <Button outline>Connect Wallet</Button>
-        </div>
-        <div className="p-5 flex flex--center flex--1">
+        </section>
+        <section className="p-5 flex flex--center flex--1">
           <div>
             <p className="tagline">About Us</p>
-            <h2 className="title">About Crypma</h2>
+            <h2 className="font-bold color-white">About Crypma</h2>
             <p>We are building the cryptoeconomy - a more fair, accessible, efficient, and transparent financial system enabled by crypto</p>
           </div>
           <div className="grid grid-2x2 gap-1 text-center">
             <div>
-              <p className="title">25M+</p>
+              <p className="font-bold color-white">25M+</p>
               <p>USERS WORLDWIDE</p>
             </div>
             <div>
-              <p className="title">140</p>
+              <p className="font-bold color-white">140</p>
               <p>COUNTRIES SUPPORTED</p>
             </div>
             <div>
-              <p className="title">56M+</p>
+              <p className="font-bold color-white">56M+</p>
               <p>CRYPTO TRANSACTIONS</p>
             </div>
             <div>
-              <p className="title">$180B</p>
+              <p className="font-bold color-white">$180B</p>
               <p>ASSETS ON PLATFORM</p>
             </div>
           </div>
-        </div>
-        <div className="p-5">
-          <p className="tagline text-center">Our Speciality</p>
-          <h2 className="title text-center">WHY Choose Us</h2>
+        </section>
+        <section className="p-5 text-center">
+          <p className="tagline">Our Speciality</p>
+          <h2>WHY Choose Us</h2>
           <div className="flex flex--center flex--1">
             <Card variant="green">
-              <p className="title text-center">Security</p>
+              <p className="font-bold color-white text-center">Security</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
             <Card variant="purple">
-              <p className="title text-center">Protection</p>
+              <p className="font-bold color-white text-center">Protection</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
             <Card variant="blue">
-              <p className="title text-center">Trust</p>
+              <p className="font-bold color-white text-center">Trust</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
           </div>
-        </div>
-        <div className="p-5">
-          <p className="tagline text-center">Portofolio</p>
-          <h2 className="title text-center">Create Portofolio</h2>
+        </section>
+        <section className="p-5 text-center">
+          <p className="tagline">Portofolio</p>
+          <h2>Create Portofolio</h2>
           <ol className="grid grid-2x2 gap-1">
             <Card variant="green">
               <li>
-                <span className="title">Manage your portofolio</span>
+                <span className="font-bold color-white">Manage your portofolio</span>
                 <p>Buy and sell popular digital currencies, keep track of them in one place</p>
               </li>
             </Card>
             <Card variant="blue">
               <li>
-                <span className="title">Manage your portofolio</span>
+                <span className="font-bold color-white">Manage your portofolio</span>
                 <p>Buy and sell popular digital currencies, keep track of them in one place</p>
               </li>
             </Card>
             <Card variant="purple">
               <li>
-                <span className="title">Manage your portofolio</span>
+                <span className="font-bold color-white">Manage your portofolio</span>
                 <p>Buy and sell popular digital currencies, keep track of them in one place</p>
               </li>
             </Card>
             <Card variant="green">
               <li>
-                <span className="title">Manage your portofolio</span>
+                <span className="font-bold color-white">Manage your portofolio</span>
                 <p>Buy and sell popular digital currencies, keep track of them in one place</p>
               </li>
             </Card>
           </ol>
-        </div>
+        </section>
         <Callout backgroundImg={piggyBank}>
-          <span className="title title--xl">Secure an Easy Way to Trade Online</span>
+          <h2 className="m-0">Secure an Easy Way to Trade Online</h2>
           <p>Sign up today to receive your free digital wallet. You can immediately start buying or selling Bitcoin, hassle-free.</p>
           <div className="mt-2">
             <Button>Get Started</Button>

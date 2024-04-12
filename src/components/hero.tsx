@@ -6,13 +6,13 @@ type Props = {
 
 const Hero = ({ backgroundImg, children }: Props) => {
   return (
-    <div className="hero" >
+    <section className="hero" >
       {backgroundImg && <>
         <img className="img-bg" src={backgroundImg} />
         <div className="overlay overlay--radial overlay--blue" />
       </>}
       {children}
-    </div >
+    </section >
   )
 }
 

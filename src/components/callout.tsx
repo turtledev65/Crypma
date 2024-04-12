@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 const Callout = (props: { backgroundImg?: string } & PropsWithChildren) => {
   return (
-    <div className="block">
+    <section className="block">
       {props.backgroundImg &&
         <>
           <img className="img-bg" src={props.backgroundImg} />
@@ -9,7 +9,7 @@ const Callout = (props: { backgroundImg?: string } & PropsWithChildren) => {
         </>
       }
       {props.children}
-    </div>
+    </section>
   );
 }
 

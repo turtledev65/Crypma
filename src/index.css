@@ -97,6 +97,9 @@ ol li::before {
   height: 1em;
 }
 
+section h2 {
+  margin-top: 0;
+}
 
 /* Component Styles */
 
@@ -182,17 +185,6 @@ ol li::before {
   color: var(--orange-600);
   font-weight: bold;
   margin: 0;
-}
-
-/* Title */
-.title {
-  color: white;
-  font-weight: bold;
-  margin: 0.1em 0;
-}
-
-.title--xl {
-  font-size: 4rem;
 }
 
 /* Badge */
@@ -389,6 +381,10 @@ ol li::before {
   margin-top: 2rem;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .mb-3 {
   margin-bottom: 3rem;
 }
@@ -437,6 +433,22 @@ ol li::before {
 /* Text */
 .text-center {
   text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-orange {
+  color: var(--orange-600);
+}
+
+.color-green {
+  color: var(--green-500);
 }
 
 /* Grids */
