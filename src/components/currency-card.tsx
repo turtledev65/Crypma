@@ -1,3 +1,4 @@
+import Badge from "./badge";
 import Card from "./card"
 import Graph from "./graph"
 
@@ -23,7 +24,7 @@ const CurrencyCard = ({ currPrice, name, symbol, icon, graphData, priceChangePer
       </div>
       <div className="currency-card__price">{currPrice}</div>
       <div className="currency-card__status">
-        <span className={`badge badge--${variant}`}>{priceChangePercent >= 0 && "+"}{priceChangePercent}%</span>
+        <Badge variant={variant}>{priceChangePercent >= 0 && "+"}{priceChangePercent}%</Badge>
         <Graph data={graphData} variant={variant} />
       </div>
 
