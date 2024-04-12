@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 
 type Props = {
-  variant?: "blue" | "purple" | "green";
+  variant?: ColorVariant
   className?: string
 } & PropsWithChildren;
 

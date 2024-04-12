@@ -4,7 +4,7 @@ type Props = {
   data: number[];
   width?: number;
   height?: number;
-  variant?: "green" | "blue" | "purple"
+  variant?: ColorVariant;
 }
 
 const Graph = ({ data, width = 150, height = 40, variant = "green" }: Props) => {

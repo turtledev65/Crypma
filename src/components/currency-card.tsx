@@ -9,7 +9,7 @@ type Props = {
   icon: string;
   graphData: number[];
   priceChangePercent: number;
-  variant?: "green" | "blue" | "purple";
+  variant?: ColorVariant;
 }
 const CurrencyCard = ({ currPrice, name, symbol, icon, graphData, priceChangePercent, variant = "green" }: Props) => {
   return (
