@@ -160,6 +160,57 @@ function App() {
             </Card>
           </ol>
         </section>
+        <section className="p-5 flex flex--1 gap-5">
+          <div className="flex flex-center">
+            <div>
+              <p className="tagline">Earn</p>
+              <h2>Earn Up to $32</h2>
+              <p>Discover how specific cryptocurrencies work - and get a bit of each crypto to try for yourself</p>
+            </div>
+          </div>
+          <ul className="coin-list">
+            <li>
+              <div className="flex flex--center gap-1">
+                <img src={bitcoin} className="coin-list__icon" />
+                <p className="coin-list__coin-name">
+                  Orchid
+                  <span>OXT</span>
+                </p>
+              </div>
+              <p className="color-green">Earn $4 OXT</p>
+            </li>
+            <li>
+              <div className="flex flex--center gap-1">
+                <img src={bitcoin} className="coin-list__icon" />
+                <p className="coin-list__coin-name">
+                  Marker
+                  <span>MKR</span>
+                </p>
+              </div>
+              <p className="color-green">Earn $4 MKR</p>
+            </li>
+            <li>
+              <div className="flex flex--center gap-1">
+                <img src={bitcoin} className="coin-list__icon" />
+                <p className="coin-list__coin-name">
+                  Palkadot
+                  <span>DOT</span>
+                </p>
+              </div>
+              <p className="color-green">Earn $3 DOT</p>
+            </li>
+            <li>
+              <div className="flex flex--center gap-1">
+                <img src={bitcoin} className="coin-list__icon" />
+                <p className="coin-list__coin-name">
+                  Stellar Lumens
+                  <span>XLM</span>
+                </p>
+              </div>
+              <p className="color-green">Earn $2 XLM</p>
+            </li>
+          </ul>
+        </section>
         <Callout backgroundImg={piggyBank}>
           <h2 className="m-0">Secure an Easy Way to Trade Online</h2>
           <p>Sign up today to receive your free digital wallet. You can immediately start buying or selling Bitcoin, hassle-free.</p>

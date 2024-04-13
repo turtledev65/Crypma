@@ -364,6 +364,40 @@ section h2 {
   gap: 0.2em;
 }
 
+/* Coins List */
+.coin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coin-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.coin-list li p {
+  margin: 0;
+}
+
+.coin-list__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.coin-list__coin-name {
+  color: white;
+  margin: 0;
+}
+
+.coin-list__coin-name span {
+  color: var(--fg);
+  font-weight: normal;
+}
+
 /* Utilities */
 .p-5 {
   padding: 5rem;
