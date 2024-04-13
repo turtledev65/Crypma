@@ -9,6 +9,7 @@ import Callout from "./components/callout"
 import piggyBank from "./assets/piggybank.jpg"
 import bitcoin from "./assets/bitcoin.svg"
 import ethereum from "./assets/ethereum.svg"
+import separatorPath from "./assets/path.svg"
 import CurrencyCard from "./components/currency-card"
 import useCoinInfo from "./hooks/use-coin-info"
 
@@ -109,6 +110,39 @@ function App() {
             <div>
               <p className="font-bold font-lg color-green m-0">$180B</p>
               <p>ASSETS ON PLATFORM</p>
+            </div>
+          </div>
+        </section>
+        <section className="p-5 text-center">
+          <p className="tagline">Process</p>
+          <h2>How It Works</h2>
+          <div className="step-list">
+            <div>
+              <img src={bitcoin} />
+              <p className="step-list__counter">Step 1</p>
+              <h3>Download</h3>
+              <p>Available to download on IOS and Android</p>
+            </div>
+            <img className="step-list__separator" src={separatorPath} />
+            <div>
+              <img src={bitcoin} />
+              <p className="step-list__counter">Step 2</p>
+              <h3>Connect Wallet</h3>
+              <p>Available to download on IOS and Android</p>
+            </div>
+            <img className="step-list__separator" src={separatorPath} />
+            <div>
+              <img src={bitcoin} />
+              <p className="step-list__counter">Step 3</p>
+              <h3>Start Trading</h3>
+              <p>Available to download on IOS and Android</p>
+            </div>
+            <img className="step-list__separator" src={separatorPath} />
+            <div>
+              <img src={bitcoin} />
+              <p className="step-list__counter">Step 4</p>
+              <h3>Earn Money</h3>
+              <p>Available to download on IOS and Android</p>
             </div>
           </div>
         </section>

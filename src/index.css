@@ -427,6 +427,24 @@ section h2 {
   width: min(100%, 30rem);
 }
 
+/* Steps */
+.step-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1;
+}
+
+.step-list__counter {
+  content: "item";
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.step-list__separator:nth-of-type(odd) {
+  transform: scaleY(-1);
+}
+
 /* Utilities */
 .p-5 {
   padding: 5rem;
