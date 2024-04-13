@@ -112,6 +112,47 @@ function App() {
             </div>
           </div>
         </section>
+        <section className="p-5">
+          <div className="flex justify-between align-center">
+            <div>
+              <p className="tagline">About Crypto</p>
+              <h2>Learn Crypto</h2>
+            </div>
+            <Button outline>View more</Button>
+          </div>
+          <div className="articles-grid">
+            <article className="article">
+              <div>
+                <h3>How to buy and sell cryptocurrency</h3>
+                <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
+              </div>
+              <div className="img-container">
+                <img src={heroBg} className="article__img" />
+              </div>
+            </article>
+            <article className="article">
+              <div>
+                <h3>How to buy and sell cryptocurrency</h3>
+                <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
+              </div>
+              <img src={heroBg} className="article__img" />
+            </article>
+            <article className="article">
+              <div>
+                <h3>How to buy and sell cryptocurrency</h3>
+                <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
+              </div>
+              <img src={heroBg} className="article__img" />
+            </article>
+            <article className="article">
+              <div>
+                <h3>How to buy and sell cryptocurrency</h3>
+                <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
+              </div>
+              <img src={heroBg} className="article__img" />
+            </article>
+          </div>
+        </section>
         <section className="p-5 text-center">
           <p className="tagline">Our Speciality</p>
           <h2>WHY Choose Us</h2>
