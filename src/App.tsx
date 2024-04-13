@@ -205,36 +205,6 @@ function App() {
             </Card>
           </div>
         </section>
-        <section className="p-5 text-center">
-          <p className="tagline">Portofolio</p>
-          <h2>Create Portofolio</h2>
-          <ol className="grid grid-2x2 gap-1">
-            <Card variant="green">
-              <li>
-                <span className="font-bold color-white">Manage your portofolio</span>
-                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
-              </li>
-            </Card>
-            <Card variant="blue">
-              <li>
-                <span className="font-bold color-white">Manage your portofolio</span>
-                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
-              </li>
-            </Card>
-            <Card variant="purple">
-              <li>
-                <span className="font-bold color-white">Manage your portofolio</span>
-                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
-              </li>
-            </Card>
-            <Card variant="green">
-              <li>
-                <span className="font-bold color-white">Manage your portofolio</span>
-                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
-              </li>
-            </Card>
-          </ol>
-        </section>
         <section className="p-5 flex flex--1 gap-5">
           <div className="flex flex-center">
             <div>
@@ -285,6 +255,36 @@ function App() {
               <p className="color-green">Earn $2 XLM</p>
             </li>
           </ul>
+        </section>
+        <section className="p-5 text-center">
+          <p className="tagline">Portofolio</p>
+          <h2>Create Portofolio</h2>
+          <ol className="grid grid-2x2 gap-1">
+            <Card variant="green">
+              <li>
+                <span className="font-bold color-white">Manage your portofolio</span>
+                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
+              </li>
+            </Card>
+            <Card variant="blue">
+              <li>
+                <span className="font-bold color-white">Manage your portofolio</span>
+                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
+              </li>
+            </Card>
+            <Card variant="purple">
+              <li>
+                <span className="font-bold color-white">Manage your portofolio</span>
+                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
+              </li>
+            </Card>
+            <Card variant="green">
+              <li>
+                <span className="font-bold color-white">Manage your portofolio</span>
+                <p>Buy and sell popular digital currencies, keep track of them in one place</p>
+              </li>
+            </Card>
+          </ol>
         </section>
         <Callout backgroundImg={piggyBank}>
           <h2 className="m-0">Secure an Easy Way to Trade Online</h2>
