@@ -23,12 +23,13 @@ function App() {
       <Navbar>
         <Logo />
         <ul>
-          <li><a className="link" href="#prices">Prices</a></li>
-          <li><a className="link" href="#learn">Learn</a></li>
           <li><a className="link" href="#wallet">Wallet</a></li>
-          <li><a className="link" href="#buy-and-sell">Buy & Sell</a></li>
           <li><a className="link" href="#about">About</a></li>
-          <li><a className="link" href="#faq">FAQ</a></li>
+          <li><a className="link" href="#process">Process</a></li>
+          <li><a className="link" href="#learn">Learn</a></li>
+          <li><a className="link" href="#why-us">Why us</a></li>
+          <li><a className="link" href="#buy-and-sell">Buy & Sell</a></li>
+          <li><a className="link" href="#portofolio">Portofolio</a></li>
         </ul>
         <a href="/signup" className="font-bold color-green">sign up</a>
       </Navbar>
@@ -113,7 +114,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="p-5 text-center">
+        <section id="process" className="p-5 text-center">
           <p className="tagline">Process</p>
           <h2>How It Works</h2>
           <div className="step-list">
@@ -146,7 +147,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="p-5">
+        <section id="learn" className="p-5">
           <div className="flex justify-between align-center">
             <div>
               <p className="tagline">About Crypto</p>
@@ -187,7 +188,7 @@ function App() {
             </article>
           </div>
         </section>
-        <section className="p-5 text-center">
+        <section id="why-us" className="p-5 text-center">
           <p className="tagline">Our Speciality</p>
           <h2>WHY Choose Us</h2>
           <div className="flex flex--center flex--1">
@@ -205,7 +206,7 @@ function App() {
             </Card>
           </div>
         </section>
-        <section className="p-5 flex flex--1 gap-5">
+        <section id="buy-and-sell" className="p-5 flex flex--1 gap-5">
           <div className="flex flex-center">
             <div>
               <p className="tagline">Earn</p>
@@ -256,7 +257,7 @@ function App() {
             </li>
           </ul>
         </section>
-        <section className="p-5 text-center">
+        <section id="portofolio" className="p-5 text-center">
           <p className="tagline">Portofolio</p>
           <h2>Create Portofolio</h2>
           <ol className="grid grid-2x2 gap-1">
