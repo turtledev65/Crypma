@@ -40,7 +40,7 @@ function App() {
         </div>
       </Hero>
       <div className="p-5">
-        <section className="block block--dark">
+        <section id="wallet" className="block block--dark">
           <p className="tagline">Wallet</p>
           <h2>Connect Your Wallet</h2>
           <CurrencyCard
@@ -87,7 +87,7 @@ function App() {
           </ol>
           <Button outline>Connect Wallet</Button>
         </section>
-        <section className="p-5 flex flex--center flex--1">
+        <section id="about" className="p-5 flex flex--center flex--1">
           <div>
             <p className="tagline">About Us</p>
             <h2 className="font-bold color-white">About Crypma</h2>

@@ -10,18 +10,26 @@ export default function useCoinInfo(coinSymbol: string, targetSymbol: string = "
 
   const symbol = coinSymbol + targetSymbol;
   useEffect(() => {
-    fetch(`${API_URL}/avgPrice?symbol=${symbol}`)
-      .then(res => res.json())
-      .then(res => setInfo(prevInfo => ({ ...prevInfo, currPrice: Number(res.price).toLocaleString("en-US", { style: "currency", currency: "USD" }) })))
-    fetch(`${API_URL}/ticker/24hr?symbol=${symbol}`)
-      .then(res => res.json())
-      .then(res => setInfo(prevInfo => ({ ...prevInfo, priceChangePercent: Number(res.priceChangePercent) })))
-    fetch(`${API_URL}/klines?symbol=${symbol}&interval=1h&limit=7`)
-      .then(res => res.json())
-      .then(res => {
-        const avgPrices = res.map((item: string[]) => parseInt(item[4]));
-        setInfo(prevInfo => ({ ...prevInfo, graphData: avgPrices }))
-      })
+    const newInfo = { ...info }
+
+    Promise.all([
+      fetch(`${API_URL}/avgPrice?symbol=${symbol}`)
+        .then(res => res.json())
+        .then(res => {
+          newInfo.currPrice = Number(res.price).toLocaleString("en-US", { style: "currency", currency: "USD" })
+        }),
+      fetch(`${API_URL}/ticker/24hr?symbol=${symbol}`)
+        .then(res => res.json())
+        .then(res => {
+          newInfo.priceChangePercent = Number(res.priceChangePercent);
+        }),
+      fetch(`${API_URL}/klines?symbol=${symbol}&interval=1h&limit=7`)
+        .then(res => res.json())
+        .then(res => {
+          const avgPrices = res.map((item: string[]) => parseInt(item[4]));
+          newInfo.graphData = avgPrices
+        })
+    ]).then(() => setInfo(newInfo));
   }, [])
 
   return { ...info }
