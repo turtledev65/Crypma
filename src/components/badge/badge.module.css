@@ -1,0 +1,19 @@
+.badge {
+  font-weight: bold;
+  color: white;
+  padding: 0.2em 0.4em;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.green {
+  background: var(--green-500);
+}
+
+.purple {
+  background: var(--purple-500);
+}
+
+.blue {
+  background: var(--blue-500);
+}
