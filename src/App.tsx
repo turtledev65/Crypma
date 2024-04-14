@@ -64,10 +64,10 @@ function App() {
           <Button>Get Started</Button>
         </div>
       </Hero>
-      <div className="p-5">
-        <section id="wallet" className="block block--dark">
-          <p className="tagline">Wallet</p>
-          <h2>Connect Your Wallet</h2>
+      <section id="wallet" className="block block--dark">
+        <p className="tagline">Wallet</p>
+        <h2>Connect Your Wallet</h2>
+        <div className="flex flex--wrap flex--center gap-1">
           <CurrencyCard
             name="Bitcoin"
             variant="green"
@@ -92,27 +92,29 @@ function App() {
             priceChangePercent={solInfo.priceChangePercent}
             icon={ethereum}
             graphData={solInfo.graphData} />
-          <ol className="grid grid-2x2 gap-1">
-            <li>
-              <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
-              <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
-            </li>
-            <li>
-              <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
-              <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
-            </li>
-            <li>
-              <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
-              <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
-            </li>
-            <li>
-              <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
-              <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
-            </li>
-          </ol>
-          <Button outline>Connect Wallet</Button>
-        </section>
-        <section id="about" className="p-5 flex flex--center flex--1 glow-section glow--blue">
+        </div>
+        <ol className="grid grid-2x2 gap-1">
+          <li>
+            <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
+            <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
+          </li>
+          <li>
+            <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
+            <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
+          </li>
+          <li>
+            <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
+            <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
+          </li>
+          <li>
+            <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
+            <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
+          </li>
+        </ol>
+        <Button outline>Connect Wallet</Button>
+      </section>
+      <div className="container">
+        <section id="about" className="flex flex--wrap flex--center flex--1 gap-1 glow-section glow--blue">
           <div>
             <p className="tagline">About Us</p>
             <h2 className="font-bold color-white">About Crypma</h2>
@@ -137,7 +139,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="process" className="p-5 text-center">
+        <section id="process" className="text-center">
           <p className="tagline">Process</p>
           <h2>How It Works</h2>
           <div className="step-list">
@@ -170,7 +172,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="learn" className="p-5 glow-section glow--purple">
+        <section id="learn" className="glow-section glow--purple">
           <div className="flex justify-between align-center">
             <div>
               <p className="tagline">About Crypto</p>
@@ -184,9 +186,7 @@ function App() {
                 <h3>How to buy and sell cryptocurrency</h3>
                 <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
               </div>
-              <div className="img-container">
-                <img src={cryptoStock1} className="article__img" />
-              </div>
+              <img src={cryptoStock1} className="article__img" />
             </article>
             <article className="article">
               <div>
@@ -211,10 +211,10 @@ function App() {
             </article>
           </div>
         </section>
-        <section id="why-us" className="p-5 text-center glow-section glow--blue">
+        <section id="why-us" className="text-center glow-section glow--blue">
           <p className="tagline">Our Speciality</p>
           <h2>WHY Choose Us</h2>
-          <div className="flex flex--center flex--1">
+          <div className="flex flex--wrap flex--center flex--1 gap-1">
             <Card variant="green">
               <img src={security} className="icon" />
               <p className="font-bold color-white">Security</p>
@@ -232,58 +232,60 @@ function App() {
             </Card>
           </div>
         </section>
-        <section id="buy-and-sell" className="p-5 flex flex--1 gap-5">
-          <div className="flex flex-center">
-            <div>
-              <p className="tagline">Earn</p>
-              <h2>Earn Up to $32</h2>
-              <p>Discover how specific cryptocurrencies work - and get a bit of each crypto to try for yourself</p>
+        <section id="buy-and-sell" className="">
+          <div className="flex flex--wrap flex--center flex--1 gap-5">
+            <div className="flex flex--center">
+              <div>
+                <p className="tagline">Earn</p>
+                <h2>Earn Up to $32</h2>
+                <p>Discover how specific cryptocurrencies work - and get a bit of each crypto to try for yourself</p>
+              </div>
             </div>
+            <ul className="coin-list">
+              <li>
+                <div className="flex flex--center gap-1">
+                  <img src={oxt} className="coin-list__icon" />
+                  <p className="coin-list__coin-name">
+                    Orchid
+                    <span>OXT</span>
+                  </p>
+                </div>
+                <p className="color-green">Earn $4 OXT</p>
+              </li>
+              <li>
+                <div className="flex flex--center gap-1">
+                  <img src={mkr} className="coin-list__icon" />
+                  <p className="coin-list__coin-name">
+                    Marker
+                    <span>MKR</span>
+                  </p>
+                </div>
+                <p className="color-green">Earn $4 MKR</p>
+              </li>
+              <li>
+                <div className="flex flex--center gap-1">
+                  <img src={dot} className="coin-list__icon" />
+                  <p className="coin-list__coin-name">
+                    Palkadot
+                    <span>DOT</span>
+                  </p>
+                </div>
+                <p className="color-green">Earn $3 DOT</p>
+              </li>
+              <li>
+                <div className="flex flex--center gap-1">
+                  <img src={xlm} className="coin-list__icon" />
+                  <p className="coin-list__coin-name">
+                    Stellar Lumens
+                    <span>XLM</span>
+                  </p>
+                </div>
+                <p className="color-green">Earn $2 XLM</p>
+              </li>
+            </ul>
           </div>
-          <ul className="coin-list">
-            <li>
-              <div className="flex flex--center gap-1">
-                <img src={oxt} className="coin-list__icon" />
-                <p className="coin-list__coin-name">
-                  Orchid
-                  <span>OXT</span>
-                </p>
-              </div>
-              <p className="color-green">Earn $4 OXT</p>
-            </li>
-            <li>
-              <div className="flex flex--center gap-1">
-                <img src={mkr} className="coin-list__icon" />
-                <p className="coin-list__coin-name">
-                  Marker
-                  <span>MKR</span>
-                </p>
-              </div>
-              <p className="color-green">Earn $4 MKR</p>
-            </li>
-            <li>
-              <div className="flex flex--center gap-1">
-                <img src={dot} className="coin-list__icon" />
-                <p className="coin-list__coin-name">
-                  Palkadot
-                  <span>DOT</span>
-                </p>
-              </div>
-              <p className="color-green">Earn $3 DOT</p>
-            </li>
-            <li>
-              <div className="flex flex--center gap-1">
-                <img src={xlm} className="coin-list__icon" />
-                <p className="coin-list__coin-name">
-                  Stellar Lumens
-                  <span>XLM</span>
-                </p>
-              </div>
-              <p className="color-green">Earn $2 XLM</p>
-            </li>
-          </ul>
         </section>
-        <section id="portofolio" className="p-5 text-center glow-section glow--purple">
+        <section id="portofolio" className="text-center glow-section glow--purple">
           <p className="tagline">Portofolio</p>
           <h2>Create Portofolio</h2>
           <ol className="grid grid-2x2 gap-1">
@@ -313,14 +315,14 @@ function App() {
             </Card>
           </ol>
         </section>
-        <Callout backgroundImg={piggyBank}>
-          <h2 className="m-0">Secure an Easy Way to Trade Online</h2>
-          <p>Sign up today to receive your free digital wallet. You can immediately start buying or selling Bitcoin, hassle-free.</p>
-          <div className="mt-2">
-            <Button>Get Started</Button>
-          </div>
-        </Callout>
       </div>
+      <Callout backgroundImg={piggyBank}>
+        <h2 className="m-0">Secure an Easy Way to Trade Online</h2>
+        <p>Sign up today to receive your free digital wallet. You can immediately start buying or selling Bitcoin, hassle-free.</p>
+        <div className="mt-2">
+          <Button>Get Started</Button>
+        </div>
+      </Callout>
       <Footer />
     </>
   )
