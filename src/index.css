@@ -195,18 +195,6 @@ section h2 {
   margin: 0;
 }
 
-/* Logo */
-.logo__span {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: #2ed252;
-  border-radius: 50%;
-  margin-right: 0.2rem;
-}
-
 /* Coins List */
 .coin-list {
   text-wrap: nowrap;
