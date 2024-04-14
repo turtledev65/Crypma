@@ -288,6 +288,7 @@ section h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .currency-card__status .graph {
