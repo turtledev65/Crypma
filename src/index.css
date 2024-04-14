@@ -12,10 +12,14 @@
   --orange-700: #c2410c;
 
   --blue-500: #627eea;
+  --blue-800: #151551;
   --blue-900: #171b37;
+
   --green-500: #58bd7d;
   --green-900: #17232d;
+
   --purple-500: #af60ed;
+  --purple-800: #24014e;
   --purple-900: #211137;
 
   --bg: #0d012c;
@@ -26,6 +30,8 @@
 
 /* Reset */
 body {
+  overflow-x: hidden;
+
   background: var(--bg);
   color: var(--fg);
   margin: 0;
@@ -445,6 +451,11 @@ section h2 {
   transform: scaleY(-1);
 }
 
+/* Icon */
+.icon {
+  max-width: 4rem;
+}
+
 /* Utilities */
 .p-5 {
   padding: 5rem;
@@ -565,4 +576,44 @@ section h2 {
 
 .gap-1 {
   gap: 1rem;
+}
+
+/* Glow */
+.glow-section {
+  position: relative;
+}
+
+.glow-section::before {
+  --glow-size: 30rem;
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: calc(-1 * (calc(var(--glow-size) + 30vw)));
+  z-index: -10;
+
+  width: var(--glow-size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  box-shadow: calc(-1 * (var(--glow-size))) 0 100px 45px var(--glow-color);
+}
+
+:nth-child(even of .glow-section)::before {
+  left: calc(-1 * (calc(var(--glow-size) + 30vw)));
+  right: unset;
+  box-shadow: var(--glow-size) 0 100px 45px var(--glow-color);
+}
+
+
+.glow--blue {
+  --glow-color: var(--blue-800);
+}
+
+.glow--purple {
+  --glow-color: var(--purple-800);
+}
+
+.glow-text {
+  text-shadow: 0 0 60px var(--glow-color, var(--blue-500));
 }

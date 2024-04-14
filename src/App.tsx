@@ -58,7 +58,7 @@ function App() {
       </Navbar>
       <Hero backgroundImg={heroBg}>
         <p className="tagline">Crypto for future</p>
-        <h1 className="font-bold color-white">Buy, Sell and Trade Crypto</h1>
+        <h1 className="font-bold color-white glow-text">Buy, Sell and Trade Crypto</h1>
         <p>Buy $500 worth of crypto and get a bonus of $50! Build a diversified portofolio with Bitcoin, Ethereum, and other popular coins</p>
         <div className="mt-2">
           <Button>Get Started</Button>
@@ -112,7 +112,7 @@ function App() {
           </ol>
           <Button outline>Connect Wallet</Button>
         </section>
-        <section id="about" className="p-5 flex flex--center flex--1">
+        <section id="about" className="p-5 flex flex--center flex--1 glow-section glow--blue">
           <div>
             <p className="tagline">About Us</p>
             <h2 className="font-bold color-white">About Crypma</h2>
@@ -170,7 +170,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="learn" className="p-5">
+        <section id="learn" className="p-5 glow-section glow--purple">
           <div className="flex justify-between align-center">
             <div>
               <p className="tagline">About Crypto</p>
@@ -211,7 +211,7 @@ function App() {
             </article>
           </div>
         </section>
-        <section id="why-us" className="p-5 text-center">
+        <section id="why-us" className="p-5 text-center glow-section glow--blue">
           <p className="tagline">Our Speciality</p>
           <h2>WHY Choose Us</h2>
           <div className="flex flex--center flex--1">
@@ -283,7 +283,7 @@ function App() {
             </li>
           </ul>
         </section>
-        <section id="portofolio" className="p-5 text-center">
+        <section id="portofolio" className="p-5 text-center glow-section glow--purple">
           <p className="tagline">Portofolio</p>
           <h2>Create Portofolio</h2>
           <ol className="grid grid-2x2 gap-1">
