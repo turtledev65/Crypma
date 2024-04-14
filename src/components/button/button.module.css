@@ -1,0 +1,25 @@
+.btn {
+  font-weight: bold;
+  padding: 1em 3em;
+  border-radius: 40px;
+  color: white;
+  transition: all 0.1s;
+}
+
+.outline {
+  border: 4px solid var(--orange-600);
+  color: var(--orange-600);
+}
+
+.outline:hover {
+  background: var(--orange-600);
+  color: white;
+}
+
+.accent {
+  background: var(--orange-600);
+}
+
+.accent:hover {
+  background: var(--orange-700);
+}

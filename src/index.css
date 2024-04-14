@@ -137,32 +137,6 @@ section h2 {
   padding: 2rem;
 }
 
-/* Button */
-.btn {
-  font-weight: bold;
-  padding: 1em 3em;
-  border-radius: 40px;
-  color: white;
-}
-
-.btn--outline {
-  border: 4px solid var(--orange-600);
-  color: var(--orange-600);
-}
-
-.btn--outline:hover {
-  background: var(--orange-600);
-  color: white;
-}
-
-.btn--accent {
-  background: var(--orange-600);
-}
-
-.btn--accent:hover {
-  background: var(--orange-700);
-}
-
 /* Input */
 .input-group {
   display: flex;

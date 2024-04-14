@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import styles from "./button.module.css";
 
 type Props = {
   outline?: boolean;
@@ -6,7 +7,7 @@ type Props = {
 } & PropsWithChildren
 
 const Button = ({ outline, children, onClick }: Props) => {
-  return <button className={`btn btn--${outline ? "outline" : "accent"}`} onClick={onClick}>{children}</button>
+  return <button className={`${styles.btn} ${styles[outline ? "outline" : "accent"]}`} onClick={onClick}>{children}</button>
 }
 
 export default Button;
