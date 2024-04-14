@@ -1,0 +1,19 @@
+.card {
+  display: inline-block;
+  border-radius: inherit;
+  padding: 1.2em 1em;
+  border-radius: 14px;
+  min-width: 12rem;
+}
+
+.blue {
+  background: var(--blue-900);
+}
+
+.green {
+  background: var(--green-900);
+}
+
+.purple {
+  background: var(--purple-900);
+}

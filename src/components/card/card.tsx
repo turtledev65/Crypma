@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import styles from "./card.module.css"
 
 type Props = {
   variant?: ColorVariant
@@ -7,7 +8,7 @@ type Props = {
 
 const Card = ({ variant = "blue", children, className }: Props) => {
   return (
-    <div className={`card card--${variant} ${className}`}>
+    <div className={`${styles.card} ${styles[variant]} ${className}`}>
       {children}
     </div>
   );

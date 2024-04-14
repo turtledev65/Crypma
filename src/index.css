@@ -195,27 +195,6 @@ section h2 {
   margin: 0;
 }
 
-/* Card */
-.card {
-  display: inline-block;
-  border-radius: inherit;
-  padding: 1.2em 1em;
-  border-radius: 14px;
-  min-width: 12rem;
-}
-
-.card--blue {
-  background: var(--blue-900);
-}
-
-.card--green {
-  background: var(--green-900);
-}
-
-.card--purple {
-  background: var(--purple-900);
-}
-
 /* Currency Card */
 .currency-card {
   display: inline-grid;
