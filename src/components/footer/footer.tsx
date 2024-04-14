@@ -1,13 +1,14 @@
 import { FormEvent, useRef } from "react";
-import Logo from "./logo";
+import Logo from "../logo";
+import styles from "./footer.module.css"
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__section">
+    <footer className={styles.footer} >
+      <div className={styles.section}>
         <Logo />
       </div>
-      <div className="footer__section">
+      <div className={styles.section}>
         <p className="font-bold color-white">Exchange</p>
         <ul>
           <li><a className="link" href="#">Buy crypto</a></li>
@@ -16,7 +17,7 @@ const Footer = () => {
           <li><a className="link" href="#">Contact</a></li>
         </ul >
       </div >
-      <div className="footer__section">
+      <div className={styles.section}>
         <p className="font-bold color-white">Contact</p>
         43252 Borer Mountains
         <br />
@@ -27,7 +28,7 @@ const Footer = () => {
         <br />
         732-528-4945
       </div >
-      <div className="footer__section">
+      <div className={styles.section}>
         <p className="font-bold color-white">Newsletter</p>
         Subscribe our newsletter to get tips and more information about Crypma
         <EmailInput className="mt-1" onSubmit={(email) => console.log(`${email} subscribed to newsletter`)} />
