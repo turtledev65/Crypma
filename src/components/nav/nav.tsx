@@ -1,4 +1,5 @@
 import { PropsWithChildren, useEffect, useRef } from "react"
+import styles from "./nav.module.css"
 
 const Navbar = ({ children }: PropsWithChildren) => {
   const ref = useRef<HTMLElement>(null);
@@ -8,9 +9,10 @@ const Navbar = ({ children }: PropsWithChildren) => {
       if (!ref.current) return;
 
       if (window.scrollY === 0) {
-        ref.current.className = "nav"
+        ref.current.className = styles.nav;
+        return;
       } else {
-        ref.current.className = "nav nav--filled"
+        ref.current.className = `${styles.nav} ${styles.filled}`;
       }
     }
 
@@ -22,9 +24,9 @@ const Navbar = ({ children }: PropsWithChildren) => {
   })
 
   return (
-    <nav ref={ref} className="nav">
+    <nav ref={ref} className={`${styles.nav}`} >
       {children}
-    </nav>
+    </nav >
   );
 }
 
