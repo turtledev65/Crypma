@@ -1,6 +1,7 @@
-import Badge from "./badge";
-import Card from "./card"
-import Graph from "./graph"
+import Badge from "../badge";
+import Card from "../card"
+import Graph from "../graph"
+import styles from "./currency-card.module.css"
 
 
 type Props = {
@@ -12,18 +13,19 @@ type Props = {
   priceChangePercent: number;
   variant?: ColorVariant;
 }
+
 const CurrencyCard = ({ currPrice, name, symbol, icon, graphData, priceChangePercent, variant = "green" }: Props) => {
   return (
-    <Card className="currency-card" variant={variant}>
-      <div className="currency-card__icon">
+    <Card className={styles.card} variant={variant}>
+      <div className={styles.icon}>
         <img src={icon} />
       </div>
-      <div className="currency-card__info" >
+      <div className={styles.info} >
         <span>{name}</span>
-        <span className="currency-card__info__symbol">{symbol}</span>
+        <span className={styles.symbol}>{symbol}</span>
       </div>
-      <div className="currency-card__price">{currPrice}</div>
-      <div className="currency-card__status">
+      <div className={styles.price}>{currPrice}</div>
+      <div className={styles.status}>
         <Badge variant={variant}>{priceChangePercent >= 0 && "+"}{priceChangePercent}%</Badge>
         <Graph data={graphData} variant={variant} />
       </div>

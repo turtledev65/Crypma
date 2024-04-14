@@ -1,0 +1,57 @@
+.card {
+  display: inline-grid;
+  grid-template-areas:
+    "icon info"
+    "icon price"
+    "icon status";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1rem;
+  row-gap: 1.5em;
+}
+
+.icon {
+  grid-area: icon;
+}
+
+.icon>img {
+  width: max(2rem, 100%);
+}
+
+.info {
+  grid-area: info;
+  justify-self: start;
+  align-self: center;
+  font-weight: bold;
+}
+
+.info>* {
+  margin-right: 1em;
+  justify-self: start;
+}
+
+.symbol {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+.price {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  grid-area: price;
+}
+
+.status {
+  grid-area: status;
+  justify-self: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status .graph {
+  flex-grow: 0.8;
+}
