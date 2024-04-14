@@ -3,15 +3,38 @@ import Card from "./components/card"
 import Hero from "./components/hero"
 import Logo from "./components/logo"
 import Navbar from "./components/nav"
-import heroBg from "./assets/cryptocurrencies.jpg"
 import Footer from "./components/footer"
 import Callout from "./components/callout"
 import piggyBank from "./assets/piggybank.jpg"
-import bitcoin from "./assets/bitcoin.svg"
-import ethereum from "./assets/ethereum.svg"
-import separatorPath from "./assets/path.svg"
 import CurrencyCard from "./components/currency-card"
 import useCoinInfo from "./hooks/use-coin-info"
+
+// Icons
+import bitcoin from "./assets/bitcoin.svg"
+import ethereum from "./assets/ethereum.svg"
+
+import download from "./assets/download.svg"
+import wallet from "./assets/wallet.svg"
+import earnMoney from "./assets/earn-money.svg"
+import chartSales from "./assets/chart-sales.svg"
+
+import oxt from "./assets/oxt.svg"
+import mkr from "./assets/mkr.svg"
+import dot from "./assets/dot.svg"
+import xlm from "./assets/xlm.svg"
+
+import security from "./assets/shield.svg"
+import protection from "./assets/protection.svg"
+import trust from "./assets/trust.svg"
+
+import separatorPath from "./assets/path.svg"
+
+// Stock images
+import heroBg from "./assets/cryptocurrencies.jpg"
+import cryptoStock1 from "./assets/crypto-stock1.jpg"
+import cryptoStock2 from "./assets/crypto-stock2.jpg"
+import cryptoStock3 from "./assets/crypto-stock3.jpg"
+import cryptoStock4 from "./assets/crypto-stock4.jpg"
 
 function App() {
   const btcInfo = useCoinInfo("BTC");
@@ -119,28 +142,28 @@ function App() {
           <h2>How It Works</h2>
           <div className="step-list">
             <div>
-              <img src={bitcoin} />
+              <img className="icon" src={download} />
               <p className="step-list__counter">Step 1</p>
               <h3>Download</h3>
               <p>Available to download on IOS and Android</p>
             </div>
             <img className="step-list__separator" src={separatorPath} />
             <div>
-              <img src={bitcoin} />
+              <img className="icon" src={wallet} />
               <p className="step-list__counter">Step 2</p>
               <h3>Connect Wallet</h3>
               <p>Available to download on IOS and Android</p>
             </div>
             <img className="step-list__separator" src={separatorPath} />
             <div>
-              <img src={bitcoin} />
+              <img className="icon" src={chartSales} />
               <p className="step-list__counter">Step 3</p>
               <h3>Start Trading</h3>
               <p>Available to download on IOS and Android</p>
             </div>
             <img className="step-list__separator" src={separatorPath} />
             <div>
-              <img src={bitcoin} />
+              <img className="icon" src={earnMoney} />
               <p className="step-list__counter">Step 4</p>
               <h3>Earn Money</h3>
               <p>Available to download on IOS and Android</p>
@@ -162,7 +185,7 @@ function App() {
                 <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
               </div>
               <div className="img-container">
-                <img src={heroBg} className="article__img" />
+                <img src={cryptoStock1} className="article__img" />
               </div>
             </article>
             <article className="article">
@@ -170,21 +193,21 @@ function App() {
                 <h3>How to buy and sell cryptocurrency</h3>
                 <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
               </div>
-              <img src={heroBg} className="article__img" />
+              <img src={cryptoStock2} className="article__img" />
             </article>
             <article className="article">
               <div>
                 <h3>How to buy and sell cryptocurrency</h3>
                 <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
               </div>
-              <img src={heroBg} className="article__img" />
+              <img src={cryptoStock3} className="article__img" />
             </article>
             <article className="article">
               <div>
                 <h3>How to buy and sell cryptocurrency</h3>
                 <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
               </div>
-              <img src={heroBg} className="article__img" />
+              <img src={cryptoStock4} className="article__img" />
             </article>
           </div>
         </section>
@@ -193,14 +216,17 @@ function App() {
           <h2>WHY Choose Us</h2>
           <div className="flex flex--center flex--1">
             <Card variant="green">
+              <img src={security} className="icon" />
               <p className="font-bold color-white">Security</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
             <Card variant="purple">
+              <img src={protection} className="icon" />
               <p className="font-bold color-white">Protection</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
             <Card variant="blue">
+              <img src={trust} className="icon" />
               <p className="font-bold color-white">Trust</p>
               <p>Your funds are protected by industry-leading security protocols</p>
             </Card>
@@ -217,7 +243,7 @@ function App() {
           <ul className="coin-list">
             <li>
               <div className="flex flex--center gap-1">
-                <img src={bitcoin} className="coin-list__icon" />
+                <img src={oxt} className="coin-list__icon" />
                 <p className="coin-list__coin-name">
                   Orchid
                   <span>OXT</span>
@@ -227,7 +253,7 @@ function App() {
             </li>
             <li>
               <div className="flex flex--center gap-1">
-                <img src={bitcoin} className="coin-list__icon" />
+                <img src={mkr} className="coin-list__icon" />
                 <p className="coin-list__coin-name">
                   Marker
                   <span>MKR</span>
@@ -237,7 +263,7 @@ function App() {
             </li>
             <li>
               <div className="flex flex--center gap-1">
-                <img src={bitcoin} className="coin-list__icon" />
+                <img src={dot} className="coin-list__icon" />
                 <p className="coin-list__coin-name">
                   Palkadot
                   <span>DOT</span>
@@ -247,7 +273,7 @@ function App() {
             </li>
             <li>
               <div className="flex flex--center gap-1">
-                <img src={bitcoin} className="coin-list__icon" />
+                <img src={xlm} className="coin-list__icon" />
                 <p className="coin-list__coin-name">
                   Stellar Lumens
                   <span>XLM</span>
