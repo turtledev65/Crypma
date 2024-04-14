@@ -207,18 +207,6 @@ section h2 {
   margin-right: 0.2rem;
 }
 
-/* Hero */
-.hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  padding: 10rem 5rem;
-}
-
 /* Coins List */
 .coin-list {
   text-wrap: nowrap;

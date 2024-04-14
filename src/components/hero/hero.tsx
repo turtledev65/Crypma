@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import styles from "./hero.module.css"
 
 type Props = {
   backgroundImg?: string;
@@ -6,7 +7,7 @@ type Props = {
 
 const Hero = ({ backgroundImg, children }: Props) => {
   return (
-    <section className="hero" >
+    <section className={styles.hero} >
       {backgroundImg && <>
         <img className="img-bg" src={backgroundImg} />
         <div className="overlay overlay--radial overlay--blue" />
