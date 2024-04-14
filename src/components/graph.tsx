@@ -41,7 +41,9 @@ const Graph = ({ data, width = 150, height = 40, variant = "green" }: Props) => 
           <stop offset="100%" style={{ stopColor: "rgba(0, 0, 0, 0)" }} />
         </linearGradient>
       </defs>
-      <polyline points={points.join(" ")} stroke={`var(--${variant}-500)`} strokeWidth={3} fill={`url(#linear-gradient-${variant})`} />
+      <polyline points={`${points.join(" ")}`} stroke={`var(--${variant}-500)`} strokeWidth={3} fill="rgba(0, 0, 0, 0)" />
+      {/* Create an "outline" of the graph path, but with points for each corner so the gradient can fill that shape */}
+      <polyline points={`${points.join(" ")} ${points[points.length - 1].split(",")[0]},${height} 0,${height}, ${points[0]}`} stroke={`var(--${variant}-500)`} strokeWidth={0} fill={`url(#linear-gradient-${variant})`} />
     </svg >
   )
 }
