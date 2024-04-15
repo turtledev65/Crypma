@@ -1,0 +1,36 @@
+.list {
+  counter-reset: item-counter;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+  text-align: left;
+}
+
+.item::before {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  content: counter(item-counter);
+  counter-increment: item-counter;
+
+  text-align: center;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+
+  color: white;
+
+  border: 1px solid var(--gray-500);
+  border-radius: 50%;
+
+  width: 1em;
+  height: 1em;
+  padding: 1em;
+  margin-right: 0.5em;
+}

@@ -35,6 +35,7 @@ import cryptoStock1 from "./assets/crypto-stock1.jpg"
 import cryptoStock2 from "./assets/crypto-stock2.jpg"
 import cryptoStock3 from "./assets/crypto-stock3.jpg"
 import cryptoStock4 from "./assets/crypto-stock4.jpg"
+import { OrderedList, OrderedListItem } from "./components/ordered-list"
 
 function App() {
   const btcInfo = useCoinInfo("BTC");
@@ -93,24 +94,20 @@ function App() {
             icon={ethereum}
             graphData={solInfo.graphData} />
         </div>
-        <ol className="grid grid-2x2 gap-1">
-          <li>
-            <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
+        <OrderedList className="grid grid-2x2 gap-1">
+          <OrderedListItem title="Buy and Sel Crypto in Minutes">
             <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
-          </li>
-          <li>
-            <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
+          </OrderedListItem>
+          <OrderedListItem title="Buy and Sel Crypto in Minutes">
             <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
-          </li>
-          <li>
-            <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
+          </OrderedListItem>
+          <OrderedListItem title="Buy and Sel Crypto in Minutes">
             <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
-          </li>
-          <li>
-            <span className="font-bold color-white">Buy and Sel Crypto in Minutes</span>
+          </OrderedListItem>
+          <OrderedListItem title="Buy and Sel Crypto in Minutes">
             <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
-          </li>
-        </ol>
+          </OrderedListItem>
+        </OrderedList>
         <Button outline>Connect Wallet</Button>
       </section>
       <div className="container">
@@ -288,32 +285,28 @@ function App() {
         <section id="portofolio" className="text-center glow-section glow--purple">
           <p className="tagline">Portofolio</p>
           <h2>Create Portofolio</h2>
-          <ol className="grid grid-2x2 gap-1">
+          <OrderedList className="grid grid-2x2 gap-1">
             <Card variant="green">
-              <li>
-                <span className="font-bold color-white">Manage your portofolio</span>
+              <OrderedListItem title="Manage your portofolio">
                 <p>Buy and sell popular digital currencies, keep track of them in one place</p>
-              </li>
+              </OrderedListItem>
             </Card>
             <Card variant="blue">
-              <li>
-                <span className="font-bold color-white">Manage your portofolio</span>
+              <OrderedListItem title="Manage your portofolio">
                 <p>Buy and sell popular digital currencies, keep track of them in one place</p>
-              </li>
+              </OrderedListItem>
             </Card>
             <Card variant="purple">
-              <li>
-                <span className="font-bold color-white">Manage your portofolio</span>
+              <OrderedListItem title="Manage your portofolio">
                 <p>Buy and sell popular digital currencies, keep track of them in one place</p>
-              </li>
+              </OrderedListItem>
             </Card>
             <Card variant="green">
-              <li>
-                <span className="font-bold color-white">Manage your portofolio</span>
+              <OrderedListItem title="Manage your portofolio">
                 <p>Buy and sell popular digital currencies, keep track of them in one place</p>
-              </li>
+              </OrderedListItem>
             </Card>
-          </ol>
+          </OrderedList>
         </section>
       </div>
       <Callout backgroundImg={piggyBank}>
