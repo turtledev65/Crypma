@@ -4,16 +4,32 @@
   padding: 1.2em 1em;
   border-radius: 14px;
   min-width: 12rem;
+  transition: ease-in-out box-shadow 0.2s;
+
+  --shadow-offset-x: 0;
+  --shadow-offset-y: 0;
 }
 
 .blue {
   background: var(--blue-900);
 }
 
+.card:hover.blue {
+  box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--blue-500);
+}
+
 .green {
   background: var(--green-900);
 }
 
+.card:hover.green {
+  box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--green-500);
+}
+
 .purple {
   background: var(--purple-900);
+}
+
+.card:hover.purple {
+  box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--purple-500);
 }
