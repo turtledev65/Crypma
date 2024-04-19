@@ -2,12 +2,13 @@ import { useMemo } from "react";
 
 type Props = {
   data: number[];
+  className?: string;
   width?: number;
   height?: number;
   variant?: ColorVariant;
 }
 
-const Graph = ({ data, width = 150, height = 40, variant = "green" }: Props) => {
+const Graph = ({ data, width = 150, height = 40, variant = "green", className }: Props) => {
   if (data.length === 0)
     return
 
@@ -34,7 +35,7 @@ const Graph = ({ data, width = 150, height = 40, variant = "green" }: Props) => 
 
 
   return (
-    <svg className="graph" width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
+    <svg className={`graph ${className ?? ""}`} width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
       <defs>
         <linearGradient id={`linear-gradient-${variant}`} x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" style={{ stopColor: `var(--${variant}-500)` }} />

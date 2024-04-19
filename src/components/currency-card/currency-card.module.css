@@ -44,14 +44,20 @@
 }
 
 .status {
-  grid-area: status;
-  justify-self: start;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  display: none;
 }
 
-.status .graph {
-  flex-grow: 0.8;
+@media screen and (min-width: 728px) {
+  .status {
+    grid-area: status;
+    justify-self: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .graph {
+    width: 100%;
+  }
 }

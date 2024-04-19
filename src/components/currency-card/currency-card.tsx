@@ -27,7 +27,7 @@ const CurrencyCard = ({ currPrice, name, symbol, icon, graphData, priceChangePer
       <div className={styles.price}>{currPrice}</div>
       <div className={styles.status}>
         <Badge variant={variant}>{priceChangePercent >= 0 && "+"}{priceChangePercent}%</Badge>
-        <Graph data={graphData} variant={variant} />
+        <Graph className={styles.graph} data={graphData} variant={variant} />
       </div>
 
     </Card>
