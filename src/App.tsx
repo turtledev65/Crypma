@@ -36,6 +36,7 @@ import cryptoStock2 from "./assets/crypto-stock2.jpg"
 import cryptoStock3 from "./assets/crypto-stock3.jpg"
 import cryptoStock4 from "./assets/crypto-stock4.jpg"
 import piggyBank from "./assets/piggybank.jpg"
+import { Article, ArticleContainer } from "./components/article"
 
 function App() {
   const btcInfo = useCoinInfo("BTC");
@@ -177,36 +178,28 @@ function App() {
             </div>
             <Button outline>View more</Button>
           </div>
-          <div className="articles-grid">
-            <article className="article">
-              <div>
-                <h3>How to buy and sell cryptocurrency</h3>
-                <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
-              </div>
-              <img src={cryptoStock1} className="article__img" />
-            </article>
-            <article className="article">
-              <div>
-                <h3>How to buy and sell cryptocurrency</h3>
-                <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
-              </div>
-              <img src={cryptoStock2} className="article__img" />
-            </article>
-            <article className="article">
-              <div>
-                <h3>How to buy and sell cryptocurrency</h3>
-                <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
-              </div>
-              <img src={cryptoStock3} className="article__img" />
-            </article>
-            <article className="article">
-              <div>
-                <h3>How to buy and sell cryptocurrency</h3>
-                <p>Buying and selling cryptocurency on Crypma is as easy as following a few easy steps</p>
-              </div>
-              <img src={cryptoStock4} className="article__img" />
-            </article>
-          </div>
+          <ArticleContainer>
+            <Article
+              title="How to buy and sell cryptocurrency"
+              body="Buying and selling cryptocurency on Crypma is as easy as following a few easy steps"
+              imgSrc={cryptoStock1}
+            />
+            <Article
+              title="How to buy and sell cryptocurrency"
+              body="Buying and selling cryptocurency on Crypma is as easy as following a few easy steps"
+              imgSrc={cryptoStock2}
+            />
+            <Article
+              title="How to buy and sell cryptocurrency"
+              body="Buying and selling cryptocurency on Crypma is as easy as following a few easy steps"
+              imgSrc={cryptoStock3}
+            />
+            <Article
+              title="How to buy and sell cryptocurrency"
+              body="Buying and selling cryptocurency on Crypma is as easy as following a few easy steps"
+              imgSrc={cryptoStock4}
+            />
+          </ArticleContainer>
         </section>
         <section id="why-us" className="text-center glow-section glow--blue">
           <p className="tagline">Our Speciality</p>

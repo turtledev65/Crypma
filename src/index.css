@@ -206,48 +206,6 @@ section h2 {
   font-weight: normal;
 }
 
-/* Articles */
-.article {
-  display: flex;
-  gap: 1rem;
-}
-
-.article__img {
-  width: clamp(2rem, 100%, 13rem);
-  aspect-ratio: 1;
-  object-fit: cover;
-  background: lightgray;
-  border-radius: 20px;
-}
-
-.articles-grid {
-  display: grid;
-  grid-template: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .articles-grid {
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .articles-grid {
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-  }
-
-  .articles-grid .article:first-child {
-    flex-direction: column-reverse;
-    align-self: self-start;
-    grid-row: 1 / -1;
-  }
-
-  .articles-grid .article:first-child .article__img {
-    width: min(100%, 30rem);
-  }
-}
-
 /* Steps */
 .step-list {
   display: flex;
