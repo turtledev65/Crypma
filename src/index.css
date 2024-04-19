@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 
   scroll-behavior: smooth;
 
@@ -67,6 +67,10 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
+  :root {
+    font-size: 1.3rem;
+  }
+
   h1 {
     font-size: 6rem;
   }
