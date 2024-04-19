@@ -406,10 +406,15 @@ section h2 {
 }
 
 @media screen and (min-width: 768px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .grid-2x2 {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   }
 }
+
 
 /* Flex */
 .flex {

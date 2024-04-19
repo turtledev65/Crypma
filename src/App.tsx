@@ -111,7 +111,7 @@ function App() {
         <Button outline>Connect Wallet</Button>
       </section>
       <div className="container">
-        <section id="about" className="flex flex--wrap flex--center flex--1 gap-1 glow-section glow--blue">
+        <section id="about" className="grid grid-1x2 align-center gap-1 glow-section glow--blue">
           <div>
             <p className="tagline">About Us</p>
             <h2 className="font-bold color-white">About Crypma</h2>
@@ -229,58 +229,56 @@ function App() {
             </Card>
           </div>
         </section>
-        <section id="buy-and-sell" className="">
-          <div className="flex flex--wrap flex--center flex--1 gap-5">
-            <div className="flex flex--center">
-              <div>
-                <p className="tagline">Earn</p>
-                <h2>Earn Up to $32</h2>
-                <p>Discover how specific cryptocurrencies work - and get a bit of each crypto to try for yourself</p>
-              </div>
+        <section id="buy-and-sell" className="grid grid-1x2 align-center gap-1">
+          <div className="flex flex--center">
+            <div>
+              <p className="tagline">Earn</p>
+              <h2>Earn Up to $32</h2>
+              <p>Discover how specific cryptocurrencies work - and get a bit of each crypto to try for yourself</p>
             </div>
-            <ul className="coin-list">
-              <li>
-                <div className="flex flex--center gap-1">
-                  <img src={oxt} className="coin-list__icon" />
-                  <p className="coin-list__coin-name">
-                    Orchid
-                    <span>OXT</span>
-                  </p>
-                </div>
-                <p className="color-green">Earn $4 OXT</p>
-              </li>
-              <li>
-                <div className="flex flex--center gap-1">
-                  <img src={mkr} className="coin-list__icon" />
-                  <p className="coin-list__coin-name">
-                    Marker
-                    <span>MKR</span>
-                  </p>
-                </div>
-                <p className="color-green">Earn $4 MKR</p>
-              </li>
-              <li>
-                <div className="flex flex--center gap-1">
-                  <img src={dot} className="coin-list__icon" />
-                  <p className="coin-list__coin-name">
-                    Palkadot
-                    <span>DOT</span>
-                  </p>
-                </div>
-                <p className="color-green">Earn $3 DOT</p>
-              </li>
-              <li>
-                <div className="flex flex--center gap-1">
-                  <img src={xlm} className="coin-list__icon" />
-                  <p className="coin-list__coin-name">
-                    Stellar Lumens
-                    <span>XLM</span>
-                  </p>
-                </div>
-                <p className="color-green">Earn $2 XLM</p>
-              </li>
-            </ul>
           </div>
+          <ul className="coin-list">
+            <li>
+              <div className="flex flex--center gap-1">
+                <img src={oxt} className="coin-list__icon" />
+                <p className="coin-list__coin-name">
+                  Orchid
+                  <span>OXT</span>
+                </p>
+              </div>
+              <p className="color-green">Earn $4 OXT</p>
+            </li>
+            <li>
+              <div className="flex flex--center gap-1">
+                <img src={mkr} className="coin-list__icon" />
+                <p className="coin-list__coin-name">
+                  Marker
+                  <span>MKR</span>
+                </p>
+              </div>
+              <p className="color-green">Earn $4 MKR</p>
+            </li>
+            <li>
+              <div className="flex flex--center gap-1">
+                <img src={dot} className="coin-list__icon" />
+                <p className="coin-list__coin-name">
+                  Palkadot
+                  <span>DOT</span>
+                </p>
+              </div>
+              <p className="color-green">Earn $3 DOT</p>
+            </li>
+            <li>
+              <div className="flex flex--center gap-1">
+                <img src={xlm} className="coin-list__icon" />
+                <p className="coin-list__coin-name">
+                  Stellar Lumens
+                  <span>XLM</span>
+                </p>
+              </div>
+              <p className="color-green">Earn $2 XLM</p>
+            </li>
+          </ul>
         </section>
         <section id="portofolio" className="text-center glow-section glow--purple">
           <p className="tagline">Portofolio</p>
