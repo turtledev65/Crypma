@@ -5,8 +5,8 @@ import Logo from "./components/logo"
 import Navbar from "./components/nav"
 import Footer from "./components/footer"
 import Callout from "./components/callout"
-import piggyBank from "./assets/piggybank.jpg"
 import CurrencyCard from "./components/currency-card"
+import { OrderedList, OrderedListItem } from "./components/ordered-list"
 import useCoinInfo from "./hooks/use-coin-info"
 
 // Icons
@@ -35,7 +35,7 @@ import cryptoStock1 from "./assets/crypto-stock1.jpg"
 import cryptoStock2 from "./assets/crypto-stock2.jpg"
 import cryptoStock3 from "./assets/crypto-stock3.jpg"
 import cryptoStock4 from "./assets/crypto-stock4.jpg"
-import { OrderedList, OrderedListItem } from "./components/ordered-list"
+import piggyBank from "./assets/piggybank.jpg"
 
 function App() {
   const btcInfo = useCoinInfo("BTC");
@@ -68,7 +68,7 @@ function App() {
       <section id="wallet" className="block block--dark">
         <p className="tagline">Wallet</p>
         <h2>Connect Your Wallet</h2>
-        <div className="flex flex--wrap flex--center gap-1">
+        <div className="flex flex--wrap flex--1 flex--center gap-1">
           <CurrencyCard
             name="Bitcoin"
             variant="green"
@@ -94,7 +94,7 @@ function App() {
             icon={ethereum}
             graphData={solInfo.graphData} />
         </div>
-        <OrderedList className="grid grid-2x2 gap-1">
+        <OrderedList className="grid grid-2x2 gap-1 my-2">
           <OrderedListItem title="Buy and Sel Crypto in Minutes">
             <p>Instantly buy Bitcoin with credit card, debit card, or by linking your bank</p>
           </OrderedListItem>
