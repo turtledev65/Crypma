@@ -1,0 +1,39 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  counter-reset: item-counter;
+}
+
+.counter {
+  content: "item";
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.counter::before {
+  counter-increment: item-counter;
+  content: "Step " counter(item-counter);
+}
+
+.separator {
+  rotate: 90deg;
+}
+
+.separator:nth-of-type(odd) {
+  transform: scaleY(-1);
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    gap: 0;
+    flex-direction: row;
+  }
+
+  .separator {
+    rotate: initial;
+  }
+}

@@ -205,41 +205,6 @@ section h2 {
   font-weight: normal;
 }
 
-/* Steps */
-.step-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.step-list__separator {
-  rotate: 90deg;
-}
-
-.step-list__counter {
-  content: "item";
-  font-weight: bold;
-  font-size: 0.7rem;
-}
-
-
-.step-list__separator:nth-of-type(odd) {
-  transform: scaleY(-1);
-}
-
-@media screen and (min-width: 1024px) {
-  .step-list__separator {
-    rotate: initial;
-  }
-
-  .step-list {
-    gap: 0;
-    flex-direction: row;
-  }
-}
-
 /* Icon */
 .icon {
   max-width: 4rem;

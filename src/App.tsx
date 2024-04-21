@@ -27,8 +27,6 @@ import security from "./assets/shield.svg"
 import protection from "./assets/protection.svg"
 import trust from "./assets/trust.svg"
 
-import separatorPath from "./assets/path.svg"
-
 // Stock images
 import heroBg from "./assets/cryptocurrencies.jpg"
 import cryptoStock1 from "./assets/crypto-stock1.jpg"
@@ -37,6 +35,7 @@ import cryptoStock3 from "./assets/crypto-stock3.jpg"
 import cryptoStock4 from "./assets/crypto-stock4.jpg"
 import piggyBank from "./assets/piggybank.jpg"
 import { Article, ArticleContainer } from "./components/article"
+import { StepList, StepListItem } from "./components/step-list"
 
 function App() {
   const btcInfo = useCoinInfo("BTC");
@@ -140,35 +139,20 @@ function App() {
         <section id="process" className="text-center">
           <p className="tagline">Process</p>
           <h2>How It Works</h2>
-          <div className="step-list">
-            <div>
-              <img className="icon" src={download} />
-              <p className="step-list__counter">Step 1</p>
-              <h3>Download</h3>
+          <StepList>
+            <StepListItem title="Download" icon={download}>
               <p>Available to download on IOS and Android</p>
-            </div>
-            <img className="step-list__separator" src={separatorPath} />
-            <div>
-              <img className="icon" src={wallet} />
-              <p className="step-list__counter">Step 2</p>
-              <h3>Connect Wallet</h3>
+            </StepListItem>
+            <StepListItem title="Connect Wallet" icon={wallet}>
               <p>Available to download on IOS and Android</p>
-            </div>
-            <img className="step-list__separator" src={separatorPath} />
-            <div>
-              <img className="icon" src={chartSales} />
-              <p className="step-list__counter">Step 3</p>
-              <h3>Start Trading</h3>
+            </StepListItem>
+            <StepListItem title="Start Trading" icon={chartSales}>
               <p>Available to download on IOS and Android</p>
-            </div>
-            <img className="step-list__separator" src={separatorPath} />
-            <div>
-              <img className="icon" src={earnMoney} />
-              <p className="step-list__counter">Step 4</p>
-              <h3>Earn Money</h3>
+            </StepListItem>
+            <StepListItem title="Earn Money" icon={earnMoney}>
               <p>Available to download on IOS and Android</p>
-            </div>
-          </div>
+            </StepListItem>
+          </StepList>
         </section>
         <section id="learn" className="glow-section glow--purple">
           <div className="flex justify-between align-center">
