@@ -100,7 +100,7 @@ ul {
   padding: 0;
 }
 
-section h2 {
+section>h2 {
   margin-top: 0;
 }
 
