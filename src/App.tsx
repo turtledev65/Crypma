@@ -59,7 +59,7 @@ function App() {
       </Navbar>
       <Hero backgroundImg={heroBg}>
         <p className="tagline">Crypto for future</p>
-        <h1 className="font-bold color-white glow-text">Buy, Sell and Trade Crypto</h1>
+        <h1 className="glow-text">Buy, Sell and Trade Crypto</h1>
         <p>Buy $500 worth of crypto and get a bonus of $50! Build a diversified portofolio with Bitcoin, Ethereum, and other popular coins</p>
         <div className="mt-2">
           <Button>Get Started</Button>
